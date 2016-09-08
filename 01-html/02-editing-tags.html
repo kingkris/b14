@@ -1,16 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Editing tags</title>
+	<style>
+		.container{
+			width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+			border: solid 1px red;
+		}
+		.bdr{
+			border: dotted 1px black;
+			background-color: wheat
+		}
+	</style>
 </head>
 <body>
-	<h1 style="background-color:green">This is a heading tag</h1>
-	<h2>This is                                     heading 2 tag</h2>
-	<h3>This is heading 3 tag</h3>
-	<h4>This is head                            ing 4 tag</h4>
-	<h5>This is heading 5 tag</h5>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor sed facilis qui voluptas. Ut ipsam nisi veritatis ratione laboriosam esse, ex nobis, repellendus animi in culpa sint libero mollitia repellat.</p>
+<div class="container">
+	<h1 style="background-color:lightgreen"><abbr title="Hyper Text Markup Language">HTML</abbr> is fun</h1>
+	<h2 class="bdr">This is                                     heading 2 tag</h2>
+	<p><cite>Einstien</cite> invented E=MC<sup>2</sup></p>
+	<h3 class="bdr">This is heading 3 <sub>tag</sub>
+		<strong>hello</strong>
+		<img src="whatever.png" alt="whatever">
+	</h3>
+	<h4 class="bdr">This is heading 4 tag</h4>
+	<h5 class="bdr">This is heading 5 tag</h5>
+	<hr><!-- self closing element -->
+	<br><!-- self closing element -->
+	<hr>
+	<p class="bdr"><strong>Lorem ipsum dolor sit amet</strong>, <b>consectetur adipisicing</b> elit. <strong>Dolor sed facilis qui voluptas</strong>. Ut ipsam nisi veritatis ratione laboriosam esse, ex nobis, repellendus animi in culpa sint libero mollitia repellat.</p>
+	
+	<h2>My name is bond <small>Jamesbond</small></h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla optio harum odio expedita veritatis, laborum qui culpa sapiente. <br><small>Hic quasi consequuntur similique! Eaque nesciunt officia ea, harum soluta distinctio pariatur.</small></p>
+
+	<p><time datetime="2016-09-09">Next Friday</time> is holiday</p>
+
+	<hr>
+	<address>
+		<strong>KriShne Gowda NL</strong>,<br>
+		#1234, 2<sup>nd</sup> main, 3<sup>rd</sup> cross, 4<sup>th</sup> building <br>
+		Last road, whatever,<br>
+		BEngaluru - 560008
+	</address>
+	<hr>
+
+<blockquote>
+	<p><q>Take One Step At a Time, You'll definetly win</q></p>
+	<cite>- Unknown</cite>
+</blockquote>
+
+<p>
+	what ever          you want to 
+	write
+	the way
+	you write
+	i 
+	don't
+	care
+</p>
+
+<pre>
+	what ever          you want to 
+	write
+		the way
+	you write
+		i 
+	don't
+		care
+</pre>
+<!-- this is comment -->
+<h2>Using Special Characters in HTML</h2>
+<p>&lt; - &gt; &#167;</p>
+
+<p>read more about special characters here - <a href="http://www.ascii.cl/htmlcodes.htm" target="_blank">http://www.ascii.cl/htmlcodes.htm</a></p>
+
+	<strong class="bdr">i am strongmore content</strong>
+	<strong class="bdr">i am strong</strong>
+	<strong class="bdr">i am strong</strong>
+	<strong class="bdr">i am strong</strong>
+	<strong class="bdr">i am strong</strong>
+
+<p><cite>Steve Jobs</cite> famously said <q>Stay Hungry, Stay Foolish</q></p>
+
+</div>
 </body>
 </html>
