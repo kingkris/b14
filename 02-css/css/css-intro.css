@@ -1,0 +1,62 @@
+/* 
+		1. CSS also ignores whitespace.
+		2. Some CSS properties gets inherited
+		3. Every html element has default CSS properties
+		4. And those properties vary from element to element
+__________________________________________________________
+
+Selectors are written like this
+
+		selector-name{
+			css-property:value;
+			css-property:value;
+			css-property:value;
+			...:...;
+			...:...;
+			...:...;
+		}
+__________________________________________________________
+
+		SELECTOR TYPES
+
+		1. Universal or star selector
+		2. Tag or type Selector
+		3. Class or dot Selector
+		4. ID Selector
+		5. Psuedo Selector
+		6. Attribute Selector
+		7. Compound Selector
+				a. Descendant Selector
+*/
+
+*{ /*universal selector*/
+	box-sizing: border-box;
+}
+/* *{ Universal reset code
+	margin: 0;
+	padding: 0
+}
+ */
+
+
+
+ 
+
+body{
+	background-color: #FEEBEB;
+	font-family: Verdana, Geneva, sans-serif;
+	color: green;
+	border: solid 10px green;
+}
+
+.heading{
+	color: crimson;
+	text-align: center;
+	font-weight: normal;
+	font-size: 40px;
+	border-bottom: double 4px crimson;
+}
+nav{
+	background-color: #FE5073;
+	padding: 2px;
+}
