@@ -32,7 +32,10 @@ __________________________________________________________
 *{ /*universal selector*/
 	box-sizing: border-box;
 }
-/* *{ Universal reset code
+
+/* Universal reset code
+
+*{ 
 	margin: 0;
 	padding: 0
 }
@@ -40,16 +43,24 @@ __________________________________________________________
 
 
 
- 
-
 body{
 	background-color: #FEEBEB;
 	font-family: Verdana, Geneva, sans-serif;
-	color: green;
+	color: #444;
 	border: solid 10px green;
 }
-
+header{
+	background-color: #69002F;
+	padding: 10px;
+}
 .heading{
+	color: crimson;
+	text-align: center;
+	font-weight: normal;
+	font-size: 40px;
+	border-bottom: double 4px crimson;
+}
+#main-heading{
 	color: crimson;
 	text-align: center;
 	font-weight: normal;
@@ -60,3 +71,91 @@ nav{
 	background-color: #FE5073;
 	padding: 2px;
 }
+
+.page-heading{
+	border-bottom: double 10px red;
+}
+
+.whatever{
+	color: green;
+	font-size: 30px;
+	font-weight: normal;
+	border: dotted 1px #CCC;
+}
+
+p{
+	font-size: 16px;
+	padding: 0 20px;
+	color: #340D6F
+}
+
+
+abbr[title]{
+	border-bottom: double 3px red;
+	cursor: pointer;
+	text-decoration: none; 
+}
+
+.site-links{
+	border: solid 1px red;
+	list-style: none;
+	padding-left: 0;
+	text-align: center;
+}
+.site-links li{
+	border: solid 1px green;
+	display: inline-block;
+}
+.site-links li a{
+	border: solid 1px white;
+	color: #FFF;
+	text-decoration: none;
+}
+.site-links li a:hover{
+	background-color: #FFF;
+	border-radius: 15px;
+	color: #444;
+}
+
+.site-links{
+	border: solid 1px red;
+	list-style: none;
+	padding-left: 0;
+	text-align: center;
+}
+/*CSS formatting way*/
+	.site-links li{
+		border: solid 1px green;
+		display: inline-block;
+	}
+		.site-links li a{
+			border: solid 1px white;
+			color: #FFF;
+			text-decoration: none;
+		}
+			.site-links li a:hover{
+				background-color: #FFF;
+				border-radius: 15px;
+				color: #444;
+			}
+
+/*CSS formatting way*/
+
+.site-links										{	border: solid 1px red;list-style: none;padding-left: 0;text-align: center;}
+	.site-links li 							{ border: solid 1px green;display: inline-block;}
+		.site-links li a 					{ border: solid 1px white;color: #FFF;text-decoration: none;}
+			.site-links li a:hover 	{ background-color: #FFF;border-radius: 15px;color: #444;}
+
+/*CSS formatting way*/
+.site-links										{	
+																border: solid 1px red;
+																list-style: none;
+																padding-left: 0;
+																text-align: center;
+															}
+	.site-links li 							{ 
+																border: solid 1px green;
+																display: inline-block;
+															}
+		.site-links li a 					{ border: solid 1px white;color: #FFF;text-decoration: none;}
+			.site-links li a:hover 	{ background-color: #FFF;border-radius: 15px;color: #444;}
