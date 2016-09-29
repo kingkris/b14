@@ -19,12 +19,12 @@ __________________________________________________________
 
 		SELECTOR TYPES
 
-		1. Universal or star selector
-		2. Tag or type Selector
-		3. Class or dot Selector
-		4. ID Selector
-		5. Psuedo Selector
-		6. Attribute Selector
+		1. Universal or star selector 	- *
+		2. Tag or type Selector 
+		3. Class or dot Selector 				- .
+		4. ID Selector 									- #
+		5. Psuedo Selector							- ::
+		6. Attribute Selector						- []
 		7. Compound Selector
 				a. Descendant Selector
 */
