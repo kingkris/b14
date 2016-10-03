@@ -56,7 +56,14 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+.main-menu{}
+.main-menu li{}
+.main-menu li a{
+  text-decoration: none;
+}
+.main-menu li a:hover{
+  text-decoration: underline;
+}
 
 
 

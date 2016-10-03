@@ -1,0 +1,157 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+
+   ========================================================================== */
+/*
+
+Font related style properties
++++++++++++++++++++++++++++++++++++++++++++
+~  font-style: normal | italic | oblique
+    ^ cite, em, i, address - for these elements the default font-style is italic
+    ^ This property gets inherited
+    ^ This property can be applied to all the elements
+    ^ Can't animate
+
+~  font-weight: normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
+    ^ h1, h2, h3, h4, h5, h6, strong, b - for these elements the default font-weight is bold
+    ^ This property gets inherited
+    ^ This property can be applied to all the elements
+    ^ Can't animate
+
+
+  font-size:
+      px, %, em, rem, vw, vh
+  line-height:
+
+  font-family: 
+    font: [font-style font-weight font-size/line-height font-family]
+  text-transform: none | uppercase | lowercase | capitalize
+  color:
+    colornames - eg. red;
+    hex decimal codes - eg. #FF0000
+    hex decimal shorthand property - eg. #F00
+      ff0011 -- f01
+      aa2233 -- a23
+      da1122 -- da1122
+      fafafa -- fafafa
+      fff222 -- fff222
+
+    rgb value - eg. rgb(255,0,0)
+    rgba value - eg. rgba(255,0,0,1)
+  text-decoration:none | underline | overline | line-through
+
+Serif, Sans-serif, cursive, monospace
+
+• rgba(); css3
+
+• text-shadow – css3
+
+auto;
+inherit;
+
+*/
+
+/* ==========================================================================
+   Demo of Font related properties
+   ========================================================================== */
+
+.inheritance-demo{
+    color: red;
+    font-size: 20px;
+    font-style: italic;
+}
+.inheritance-demo *{
+    border: solid 1px red;
+    margin: 10px;
+    width: 600px;
+}
+
+.someother{background-color: green;color: #FFF;}
+.someother:hover{
+    background-color: orange;
+    /* width: 800px; */
+    /* transition: all 1000ms linear; */
+}
+.someother:hover p{
+    border-color: white;
+    width: 700px;
+    transition: all 350ms ease;
+}
+
+
+.f-weight-demo{
+  font-weight: 200;
+}
+.ff-roboto{
+  font-family: 'Roboto', sans-serif;
+}
+.ff-slabo27{
+  font-family: 'Slabo 27px', serif;
+}
+.ff-yanone{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.ff-helivitca{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Arial Narrow",Arial,sans-serif;
+  font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+}
+.lh-demo{
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.widget{
+  width: 400px;
+  margin: 20px auto;
+  border: solid 1px #CCC;
+  background-color: #FAEBFF;
+  border-radius: 5px;
+}
+
+.widget h1{
+/*   font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 50px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+*/
+/* font: [font-style font-weight font-size/line-height font-family]*/
+
+  font: normal normal 24px/50px 'Yanone Kaffeesatz', sans-serif;
+
+/*   font: 24px/2;
+    font: 24px/50px 'Yanone Kaffeesatz', sans-serif;
+*/
+
+  text-transform: uppercase;
+  color: #FFF;
+ 
+  background-color: #D045CE;
+  border-radius: 5px 5px 0 0;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.color-demo{
+  color: red;
+  color: #FF0000; 
+  color: #F00;
+/* 
+  AA3300 --> A30;
+  SS1122 --> Wrong color;
+  112132 --> 112132
+  112221 --> 112221
+  111222 --> 111222
+ */
+ /*color: rgb(255,0,0); */
+ color: rgba(255,0,0,.5)
+}
+
+
