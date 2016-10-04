@@ -56,6 +56,25 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body{
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+/* Grouping of Selectors */
+/* When multiple selectors carry 
+   same set of style properties, 
+   You group them*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: Georgia,Times,"Times New Roman",serif;
+}
+
+
+
 .main-menu{}
 .main-menu li{}
 .main-menu li a{
