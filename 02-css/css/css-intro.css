@@ -24,6 +24,12 @@ __________________________________________________________
 		3. Class or dot Selector 				- .
 		4. ID Selector 									- #
 		5. Psuedo Selector							- ::
+						:link, :hover, :visited, 
+						:before, :after, 
+						:first-child, :last-child, nth-child, :focus, 
+						:selection, 
+						https://www.smashingmagazine.com/2016/05/an-ultimate-guide-to-css-pseudo-classes-and-pseudo-elements/
+						
 		6. Attribute Selector						- []
 		7. Compound Selector
 				a. Descendant Selector

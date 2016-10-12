@@ -1,0 +1,49 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+
+   ========================================================================== */
+/*
+
+List related style properties
++++++++++++++++++++++++++++++++++++++++++++
+
+  list-style-type: disc | circle | square | none ;
+  list-style-type: decimal | lower-alpha  |  uper-alpha | lower-roman |  none ;
+  list-style-image: ;
+  list-style-position: outside | inside;
+
+
+
+auto;
+inherit;
+
+*/
+
+/* ==========================================================================
+   Demo of Font related properties
+   ========================================================================== */
+.wrap{
+  width: 1000px;
+  margin:20px auto;
+  padding: 20px;
+  border: solid 1px grey;
+}
+.wrap ul,
+.wrap ol{
+  background-color: wheat;
+  border: solid 1px blue;
+}
+.wrap ol > li{
+  border: dotted 1px grey;
+}
+.wrap ol{
+  list-style-image: url('../img/ico-smiely.png');
+  list-style-position: outside;
+}
+

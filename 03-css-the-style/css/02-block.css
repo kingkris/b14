@@ -69,18 +69,27 @@ inherit;
   border:solid 1px red;
   background-color: lightgreen;
   margin:10px;
-  text-align: center;
+  text-align: left;
   vertical-align:middle;
-  display:inline-block
+  display:inline-block;
+  position: relative;
+  cursor:pointer;
 }
 
 .box:after{
-  content:"box";
+  content:"asd";
   border: solid 1px blue;
   width:50px;
-  display: none;
+
+  position: absolute;
+  left:0;
+  opacity:0;
+  visibility:hidden;
+  transition: all 250ms ease;
 }
 
 .box:hover:after{
-  display: inline;
+  left:70px;
+  opacity:1;
+  visibility:visible;
 }

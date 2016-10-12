@@ -57,7 +57,7 @@ textarea {
    ========================================================================== */
 
 body{
-  font-family: Verdana, Geneva, sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 /* Grouping of Selectors */
@@ -70,15 +70,42 @@ h3,
 h4,
 h5,
 h6{
-  font-family: Georgia,Times,"Times New Roman",serif;
+    font-family: 'Slabo 27px', serif;
 }
 
 
 
-.main-menu{}
-.main-menu li{}
+/*----------  site-header styles  ----------*/
+.site-header{}
+.site-header h1{
+    font-size:48px;
+    text-align: center;
+}
+.site-header h1 small{
+    font-size:18px;
+    display: block;
+    line-height: .5;
+}
+
+
+
+
+.main-menu{
+  border-bottom: solid 1px red;
+  padding-left: 0;
+  list-style: none; 
+  text-align: center;
+}
+.main-menu li{
+  display:inline-block;
+  padding:0 10px;
+}
 .main-menu li a{
   text-decoration: none;
+  text-transform: uppercase;
+}
+.main-menu li.active a{
+  text-decoration: underline;
 }
 .main-menu li a:hover{
   text-decoration: underline;

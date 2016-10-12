@@ -1,0 +1,170 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+
+   ========================================================================== */
+/*
+
+Background related style properties
++++++++++++++++++++++++++++++++++++++++++++
+background-color
+background-image
+background-repeat: repeat | no-repeat | repeat-x | repeat-y
+background-attachment:-fixed | scroll
+background-position:;
+   Values you give ar X Y cordinates
+    1. keywords - for x it is  - left center right
+                  for y it is  - top center bottom
+    2. Length -  
+
+    3. Percentage - 
+
+  background :[color] [image] [repeat] [attachment] [position];
+
+
+background-size: –contain, cover
+
+background-origin: –border-box, padding-box, content-box
+background-clip: –
+
+multiple backgrounds
+gradients
+
+transparent;
+
+auto;
+inherit;
+
+*/
+
+/* ==========================================================================
+   Demo of Font related properties
+   ========================================================================== */
+.wrap{
+  width: 1000px;
+  margin:20px auto;
+  padding: 20px;
+  border: solid 1px grey;
+  background-color:lightblue;
+}
+.wrap h2{
+  background-color:white;
+}
+
+body{
+  background-image: url('../img/banner-05.jpg');
+  background-attachment: fixed;
+
+
+}
+
+.bg-img-demo{
+  min-height: 390px;
+
+  background-image: url('../img/ico-smiely.png'), url('../img/ico-location.png');
+
+  background-repeat: repeat-y, repeat-x;
+
+  background-position: 0 0, 0 100%;
+
+}
+.bg-img-pos-demo{
+  min-height: 250px;
+
+  background-image: url('../img/ico-smiely.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+
+/*    Values you give ar X Y cordinates
+        1. keywords - for x it is  - left center right
+               for y it is  - top center bottom
+ */
+
+}
+.bg-demo2{
+  width:300px;
+  height:120px;
+  margin:20px auto;
+  padding: 20px;
+  border: solid 1px grey;
+  background-color:lightblue;
+  background-image: url('../img/students.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+ 
+}
+.bg-demo3{
+  width:800px;
+  margin:20px auto;
+  padding: 20px;
+  border: solid 1px grey;
+  background-color:lightblue;
+  position: relative;
+}
+.bg-overlay{
+  position: absolute;
+  left:20px;right:20px;
+  top:20px;bottom:20px;
+  margin:auto;
+
+background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+background: linear-gradient(to top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+
+
+
+}
+.bg-demo1{
+  width:300px;
+  height:120px;
+  margin:20px auto;
+  padding: 20px;
+  border: solid 1px grey;
+  background-color:lightblue;
+  background-image: url('../img/students.jpg');
+  background-position: top left;
+ 
+}
+.bg-sprite-demo{
+  width:1000px;
+  margin:20px auto;
+  padding: 20px;
+  border: solid 1px grey;
+
+  text-align: center;
+
+
+background: #ade840;
+background: -moz-linear-gradient(top,  #ade840 0%, #358908 100%);
+background: -webkit-linear-gradient(top,  #ade840 0%,#358908 100%);
+background: linear-gradient(to bottom,  #ade840 0%,#358908 100%);
+
+
+
+
+
+}
+
+.face{
+  width:120px;
+  height:120px;
+  border:solid 3px #283049;
+  border-radius:50%;
+  display:inline-block;
+  background-image: url('../img/students.jpg');
+  background-repeat: no-repeat;
+}
+
+.face-1{background-position: -21px -16px;}
+.face-2{background-position: -156px -10px;}
+.face-3{background-position: -279px -38px;}
+.face-4{background-position: -394px 0;}
+.face-5{background-position: -539px -31px;}
+.face-6{background-position: -653px -17px;}
+
+
