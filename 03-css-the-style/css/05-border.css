@@ -1,0 +1,138 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+
+   ========================================================================== */
+/*
+
+
+Border related style properties
++++++++++++++++++++++++++++++++++++++++++++
+border-style: none solid dotted dashed double ridge groove inset outset
+border-width: pixels 
+border-color: 
+
+border-left-style
+border-left-width
+border-left-color
+
+border-right-style
+border-right-width
+border-right-color
+
+border-top-style
+border-top-width
+border-top-color
+
+border-bottom-style
+border-bottom-width
+border-bottom-color
+
+border:[style] [width] [color];
+  border-left:;
+  border-right:;
+  border-top:;
+  border-bottom:;
+
+border-radius
+border-image
+
+https://developer.mozilla.org/en/docs/Web/CSS/border-radius
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Background_and_Borders/Border-radius_generator
+
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Background_and_Borders/Border-image_generator
+
+
+
+border-collapse:;
+border-spacing:;
+empty-cells: –show | hide
+
+
+
+
+
+auto;
+inherit;
+
+
+
+*/
+
+/* ==========================================================================
+   Demo of Border related properties
+   ========================================================================== */
+
+.wrap{
+  width:500px;
+  margin:20px auto;
+  padding: 30px;
+  background-color: lightgreen;
+  color:green;
+}
+
+.bdr1{
+  border-style: solid;
+  border-width: 10px;
+}
+
+.bdr1{
+  border-left-style: solid;
+  border-right-style: dotted;
+  border-top-style: dashed;
+  border-bottom-style: double;
+
+  border-width: 20px;
+  border-color: red green orange;
+}
+
+.bdr2{
+  /* border-left: [style] [width] [color]; */
+  border-left: solid 5px red ;
+  border-right: dotted 3px green ;
+  border-bottom: dashed 8px orange ;
+  border-top: double 8px violet ;
+}
+
+.bdr3{
+  /* border: [style] [width] [color]; */
+  border: solid 5px red ;
+}
+
+.bdr4{
+  border: solid 5px red ;
+  border-radius: 50%;
+  width:120px;
+  height:120px;
+  text-align: center;
+}
+.tc h2{
+  line-height: 120px;
+  margin:0;
+  padding:0;
+}
+
+.bdr5{
+  border: solid 5px red ;
+  border-radius: 50% 0;
+  width:120px;
+  height:120px;
+  text-align: center;
+}
+
+.bdr6{
+  border: solid 5px red ;
+  border-top-right-radius: 50%;
+  width:120px;
+  height:120px;
+  text-align: center;
+}
+
+

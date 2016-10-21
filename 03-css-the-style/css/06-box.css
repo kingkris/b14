@@ -1,0 +1,74 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+
+   ========================================================================== */
+/*
+
+BOX related style properties
++++++++++++++++++++++++++++++++++++++++++++
+
+width, min-width, max-width
+height, min-height, max-height 
+overflow: visible | hidden | scroll | auto
+
+padding
+margin
+
+float : left | right | none
+clear: none | left | right | both
+
+box-sizing: content-box | padding-box | border-box
+resize -none | both | horizontal | vertical 
+opacity 
+
+
+column-count
+  column-gap  
+  column-fill –auto | balance
+  column-rule -<'column-rule-width'> || <'column-rule-style'> || <'column-rule-color'>
+
+Flex-box
+Grids
+
+auto;
+inherit;
+
+
+*/
+
+/* ==========================================================================
+   Demo of BOX related properties
+   ========================================================================== */
+
+.wrap{
+  width:400px;
+  height:200px;
+  border: solid 1px red;
+  margin:20px auto;
+  padding: 2px;
+  background-color: lightgreen;
+}
+
+
+.dabba{
+  border: solid 1px red;
+  background-color:lightgreen;
+  min-width:100px;
+  max-width:200px;
+  min-height:50px;
+  max-height:150px;
+
+  width:300px;
+  height:300px;
+
+  float:left;
+  margin:5px;
+
+  overflow: auto
+}
