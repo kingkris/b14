@@ -18,7 +18,15 @@ height, min-height, max-height
 overflow: visible | hidden | scroll | auto
 
 padding
+  padding-left: ;
+  padding-right: ;
+  padding-bottom: ;
+  padding-top: ;
 margin
+  margin-left: ;
+  margin-right: ;
+  margin-top: ;
+  margin-bottom: ;
 
 float : left | right | none
 clear: none | left | right | both
@@ -60,15 +68,50 @@ inherit;
   border: solid 1px red;
   background-color:lightgreen;
   min-width:100px;
-  max-width:200px;
+  max-width:120px;
+  margin:5px;
   min-height:50px;
   max-height:150px;
 
-  width:300px;
-  height:300px;
+  overflow:scroll;
+  /* overflow-x:scroll;
+  overflow-y:scroll; */
+  float:left
 
-  float:left;
-  margin:5px;
-
-  overflow: auto
 }
+.clear{
+  clear:both;
+}
+
+.dabba1{
+  background-color:lightgreen;
+  border: solid 5px red;
+  margin:10px;
+  padding:10px 30px;
+}
+
+.parent-dabba{
+  background-color:lightgreen;
+  border: solid 3px red;
+  margin:30px 50px;
+}
+.parent-dabba:after{
+  content:"";
+  display: block;
+  clear: both;
+}
+
+.child{
+  border: solid 3px orange;
+  background-color:lightblue;
+  width:200px;
+  height:50px;
+}
+.fr{float: right;}
+.fl{float: left;}
+
+.site-footer{
+  clear:both;
+}
+
+

@@ -58,6 +58,7 @@ textarea {
 
 body{
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    overflow-y:scroll;
 }
 
 /* Grouping of Selectors */
