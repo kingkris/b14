@@ -115,3 +115,32 @@ inherit;
 }
 
 
+.panel{
+  border: solid 1px green;
+  background-color:lightgreen;
+  margin:20px auto;
+  width:600px;
+  padding:10px;
+}
+.panel:after{ /* clearfix */
+  content:"";
+  display: block;
+  clear: both;
+  border-top: solid 1px red;
+}
+
+.panel_content{
+  border: solid 1px red;
+  background-color:lightblue;
+  float: left;
+  width:150px;
+  height:50px;
+}
+.panel_txt{
+  border: solid 1px blue;
+  clear:both;
+}
+
+.clear{
+  clear: both;
+}

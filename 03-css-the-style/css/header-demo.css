@@ -1,0 +1,43 @@
+body{
+  font-family: Verdana, Geneva, sans-serif;
+  font-size:14px;
+  color:#444;
+  line-height: 1.4;
+}
+.site-header{
+  background-color: #ce0909;
+}
+.container{
+  width: 1000px;
+  margin:0 auto;
+}
+.container:after{
+  content:"";
+  clear: both;
+  display: block;
+}
+.logo{
+  float: left;
+  margin: 10px 0 ;
+}
+.logo img{
+  display: block;
+}
+.header-links{
+  float: right;
+  margin-top: 32px;
+}
+.header-links a{
+  float: left;
+  width:36px;
+  height:36px;
+  background-color:#FFF;
+  margin-left: 10px;
+  text-align: center;
+  line-height: 36px;
+  text-decoration: none;
+  color:#ce0909
+}
+.header-links a:hover{
+  background-color:#faa100;
+}
