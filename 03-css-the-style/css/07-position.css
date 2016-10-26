@@ -1,0 +1,127 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+
+   ========================================================================== */
+/*
+
+Position related style properties
++++++++++++++++++++++++++++++++++++++++++++
+
+position: static | relative | absolute | sticky| fixed
+  Applies to all elements
+
+left, top, right, bottom
+  Applies to positioned elements
+
+z-index: auto | <integer>
+  Applies to positioned elements
+
+visibility: visible | hidden | collapse
+  Applies to all elements
+
+overflow: visible | hidden | scroll | auto
+overflow-x
+overflow-y
+
+auto;
+inherit;
+
+*/
+
+/* ==========================================================================
+   Demo of Position related properties
+   ========================================================================== */
+
+.posi-wrap{
+  border: solid 1px red;
+  background-color: wheat;
+  margin:25px auto;
+  width: 1000px;
+}
+.posi-wrap *{
+  border: dashed 1px green;
+}
+.posi-wrap h2{
+  border-bottom: double 3px red;
+  background-color: lightblue;
+  padding: 10px;
+  margin:0;
+  text-align: center;
+}
+
+.posi-static-demo{
+  position:static;
+  top:100px;
+  z-index:
+}
+
+.posi-relative-demo{
+  position:relative;
+  top:50px;
+  left:100px;
+}
+
+.pos-rel-demo{
+  position: relative;
+  bottom:30px;
+  top:30px;
+  right:40px;
+  left:40px;
+  width:50%;
+  background-color:rgba(255,0,0,.9);
+  z-index:2;
+}
+.pos-re-zi-demo{
+  position: relative;
+  z-index:1;
+  background-color:orange;
+}
+.posi-absolute-demo{
+  position: absolute;
+  background-color:rgba(255,0,0,1);
+
+  top: 0;
+  left:0;
+  bottom:0;
+  right:0;
+  width:20%;
+  height:20%;
+  margin:auto;
+}
+
+div.posi-absolute-demo {
+  z-index:1;
+}
+
+.pos-rel{position: relative;}
+
+.banner{
+  border:solid 5px grey;
+  width:800px;
+  height:360px;
+  margin:25px auto;
+  overflow:hidden;
+  position: relative;
+}
+
+.banner h2{
+  position: absolute;
+  background-color:rgba(0,0,0,.75);
+  color: #FFF;
+  padding:20px;
+  margin:0;
+  font-weight:normal;
+  font-size:40px;
+  bottom:0;
+  right:0;
+  width:100%;
+  text-align: center;
+}
+
+
