@@ -124,4 +124,45 @@ div.posi-absolute-demo {
   text-align: center;
 }
 
+/* 9740160080 - mallikarjun */
+
+.row{
+  border-bottom: dotted 1px grey;
+  margin-bottom: 25px;
+  padding:0 5px 25px;
+}
+.row:after{
+  content:"";
+  display:block;
+  clear: both;
+}
+.col-one-half{
+  width:50%;
+  float: left;
+}
+.col-one-third{
+  width:33.333%;
+  float: left;
+}
+.col-one-fourth{
+  width:25%;
+  float: left;
+}
+
+/*----------  Panel  ----------*/
+.panel{
+  background-color:#e7e7e7;
+  border: solid 1px #b0b0b0;
+  border-radius:10px;
+  margin:0 10px;
+}
+.panel-header{
+  background: #a29aa8;
+  background: -moz-linear-gradient(top,  #a29aa8 0%, #6d6771 100%);
+  background: -webkit-linear-gradient(top,  #a29aa8 0%,#6d6771 100%);
+  background: linear-gradient(to bottom,  #a29aa8 0%,#6d6771 100%);
+}
+.panel-header h2{
+  margin:0;
+}
 
