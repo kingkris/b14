@@ -4,8 +4,12 @@ body{
   color:#444;
   line-height: 1.4;
 }
+*{
+  box-sizing: border-box;
+}
 .site-header{
   background-color: #ce0909;
+  margin-bottom: 20px;
 }
 .container{
   width: 1000px;
@@ -15,6 +19,7 @@ body{
   content:"";
   clear: both;
   display: block;
+  
 }
 .logo{
   float: left;
@@ -41,3 +46,52 @@ body{
 .header-links a:hover{
   background-color:#faa100;
 }
+
+.row{
+  clear: both;
+}
+.row:after{
+  clear: both;
+  display: block;
+  content:"";
+}
+.one-half{
+  width:50%;
+  float: left;
+  padding: 20px;
+}
+.one-third{
+  width:33.3333%;
+  float: left;
+  padding: 20px;
+}
+.lightblue{background-color:lightblue;}
+.lightgreen{background-color:lightgreen;}
+.wheat{background-color:wheat;}
+.space{padding:20px 0}
+
+
+/*----------  widget1  ----------*/
+.widget h2{
+  border: solid 1px red;
+  margin:0 60px 0 0;
+}
+.viewall{
+  border: solid 1px red;
+  float: right;
+}
+.widget ul{
+  clear:both;
+}
+
+/*----------  widget2  ----------*/
+.widget2 h2{
+  border: solid 1px red;
+  margin:0 0 15px;
+  float: left;
+  
+}
+.widget2 ul{
+  clear:both;
+}
+
