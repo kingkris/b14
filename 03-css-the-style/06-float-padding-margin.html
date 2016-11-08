@@ -1,0 +1,283 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>BOX related css properties | ME, CSS and Browser</title>
+  <meta name="description" content="Learn all the properties related to BOX. You'll find examples for all the properties ">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/06-box.css">
+
+  <!-- Fontface from google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Yanone+Kaffeesatz:300" rel="stylesheet"> 
+
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<!-- <body dir="rtl"> -->
+<!-- To change the direction of the text on th epage -->
+<body>
+<!--[if lt IE 9]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<header class="site-header">
+  <div class="container">
+    <h1>
+      ME, CSS and Browser 
+      <small>with style</small>
+    </h1>
+    <nav>
+      <ul class="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="01-type.html">Type</a></li>
+        <li><a href="02-block.html">Block</a></li>
+        <li><a href="03-list.html">List</a></li>
+        <li><a href="04-background.html">Background</a></li>
+        <li><a href="05-border.html">Border</a></li>
+        <li class="active"><a href="06-box.html">Box</a></li>
+        <li><a href="07-position.html">Position</a></li>
+        <li><a href="08-css3.html">CSS3</a></li>
+        <li><a href="09-animation.html">Animations</a></li>
+        <li><a href="10-layouts.html">Layouts</a></li>
+      </ul><!-- eo .main-menu -->
+    </nav>
+  </div><!-- eo conatiner -->
+</header><!-- /header -->
+
+<div class="conatiner">
+  <h1 class="page-heading">BOX related properties - Float</h1>
+
+  <div class="bdr bd-green ffl in-w">i am a div</div>
+  <div class="bdr bd-blue ffr in-w">i am the second in  line, i am a div i am a div</div>
+  <div class="bdr cb">3rd one i am a div</div>
+  <h1 class="bdr">i am a h1</h1>
+  <h1 class="bdr">i am a h1</h1>
+  <h1 class="bdr">i am a h1</h1>
+  <p class="bdr">i am a p</p>
+  <p class="bdr">i am a p</p>
+  <ul class="bdr">
+    <li><a href="#">link1</a></li>
+    <li><a href="#">link1</a></li>
+    <li><a href="#">link1</a></li>
+    <li><a href="#">link1</a></li>
+  </ul>
+  <ul class="bdr">
+    <li><a href="#">link1</a></li>
+    <li><a href="#">link1</a></li>
+    <li><a href="#">link1</a></li>
+    <li><a href="#">link1</a></li>
+  </ul>
+  <strong class="bdr in-w ffl">i am strong</strong>
+  <span class="bdr">i am span</span>
+
+
+
+<style>
+  .site-header{
+    background-color: #5531C8;
+  }
+  .site-header h1{
+    color: #FFF;
+    float: left;
+    border: solid 3px red;
+  }
+  .site-header nav{
+    float: right;
+    border: solid 3px red;
+  }
+  .container{
+    border: solid 3px green;
+  }
+  .container:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .bdr{border: solid 2px red;}
+  .bd-green{border-color: green;}
+  .bd-blue{border-color: blue;}
+  .bd-black{border-color: black;}
+  .bd-crimson{border-color: crimson;}
+
+  .ffl{float: left;}
+  .ffr{float: right;}
+  .cb{clear: both;}
+  .cl{clear: left;}
+  .cr{clear: right;}
+  .in-w{
+    width: 500px;
+    margin: 2px;
+  }
+
+</style>
+
+
+<hr class="cb">
+
+  <div class="friends">
+    <div class="frnd">
+      <div class="frnd-wrap">
+        <div class="frnd-pic">
+          <img src="https://api.fnkr.net/testimg/100x100/00CED1/FFF/?text=img+placeholder">
+        </div><!-- eo frnd-pic -->
+        <div class="frnd-details">
+          <h3>Mr. Mightbeyour friend</h3>
+          <a href="#">1 mutual friend</a>
+          <a href="#" class="btn">Add Friend</a>
+        </div>
+      </div><!-- eo frnd-wrap -->
+    </div><!-- eo frnd -->
+    <div class="frnd">
+      <div class="frnd-wrap">
+        <div class="frnd-pic">
+          <img src="https://api.fnkr.net/testimg/100x100/00CED1/FFF/?text=img+placeholder">
+        </div><!-- eo frnd-pic -->
+        <div class="frnd-details">
+          <h3>Mr. Mightbeyour friend</h3>
+          <a href="#">1 mutual friend</a>
+          <a href="#" class="btn">Add Friend</a>
+        </div>
+      </div><!-- eo frnd-wrap -->
+    </div><!-- eo frnd -->
+    <div class="frnd">
+      <div class="frnd-wrap">
+        <div class="frnd-pic">
+          <img src="https://api.fnkr.net/testimg/100x100/00CED1/FFF/?text=img+placeholder">
+        </div><!-- eo frnd-pic -->
+        <div class="frnd-details">
+          <h3>Mr. Mightbeyour friend</h3>
+          <a href="#">1 mutual friend</a>
+          <a href="#" class="btn">Add Friend</a>
+        </div>
+      </div><!-- eo frnd-wrap -->
+    </div><!-- eo frnd -->
+    <div class="frnd">
+      <div class="frnd-wrap">
+        <div class="frnd-pic">
+          <img src="https://api.fnkr.net/testimg/100x100/00CED1/FFF/?text=img+placeholder">
+        </div><!-- eo frnd-pic -->
+        <div class="frnd-details">
+          <h3>Mr. Mightbeyour friend</h3>
+          <a href="#">1 mutual friend</a>
+          <a href="#" class="btn">Add Friend</a>
+        </div>
+      </div><!-- eo frnd-wrap -->
+    </div><!-- eo frnd -->
+    <div class="frnd">
+      <div class="frnd-wrap">
+        <div class="frnd-pic">
+          <img src="https://api.fnkr.net/testimg/100x100/00CED1/FFF/?text=img+placeholder">
+        </div><!-- eo frnd-pic -->
+        <div class="frnd-details">
+          <h3>Mr. Mightbeyour friend</h3>
+          <a href="#">1 mutual friend</a>
+          <a href="#" class="btn">Add Friend</a>
+        </div>
+      </div><!-- eo frnd-wrap -->
+    </div><!-- eo frnd -->
+    <div class="frnd">
+      <div class="frnd-wrap">
+        <div class="frnd-pic">
+          <img src="https://api.fnkr.net/testimg/100x100/00CED1/FFF/?text=img+placeholder">
+        </div><!-- eo frnd-pic -->
+        <div class="frnd-details">
+          <h3>Mr. Mightbeyour friend</h3>
+          <a href="#">1 mutual friend</a>
+          <a href="#" class="btn">Add Friend</a>
+        </div>
+      </div><!-- eo frnd-wrap -->
+    </div><!-- eo frnd -->
+    <div class="frnd">
+      <div class="frnd-wrap">
+        <div class="frnd-pic">
+          <img src="https://api.fnkr.net/testimg/100x100/00CED1/FFF/?text=img+placeholder">
+        </div><!-- eo frnd-pic -->
+        <div class="frnd-details">
+          <h3>Mr. Mightbeyour friend</h3>
+          <a href="#">1 mutual friend</a>
+          <a href="#" class="btn">Add Friend</a>
+        </div>
+      </div><!-- eo frnd-wrap -->
+    </div><!-- eo frnd -->
+    <div class="frnd">
+      <div class="frnd-wrap">
+        <div class="frnd-pic">
+          <img src="https://api.fnkr.net/testimg/100x100/00CED1/FFF/?text=img+placeholder">
+        </div><!-- eo frnd-pic -->
+        <div class="frnd-details">
+          <h3>Mr. Mightbeyour friend</h3>
+          <a href="#">1 mutual friend</a>
+          <a href="#" class="btn">Add Friend</a>
+        </div>
+      </div><!-- eo frnd-wrap -->
+    </div><!-- eo frnd -->
+    <div class="frnd">
+      <div class="frnd-wrap">
+        <div class="frnd-pic">
+          <img src="https://api.fnkr.net/testimg/100x100/00CED1/FFF/?text=img+placeholder">
+        </div><!-- eo frnd-pic -->
+        <div class="frnd-details">
+          <h3>Mr. Mightbeyour friend</h3>
+          <a href="#">1 mutual friend</a>
+          <a href="#" class="btn">Add Friend</a>
+        </div>
+      </div><!-- eo frnd-wrap -->
+    </div><!-- eo frnd -->
+  </div>
+
+<style>
+  
+
+  .friends{
+    border: solid 1px red;
+    width: 1100px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    padding: 5px;
+  }
+  .friends *{
+    box-sizing: border-box;
+  }
+  .frnd{
+    width: 25%;
+    float: left;
+    padding: 5px;
+  }
+  .frnd-wrap{
+    border: dotted 1px green;
+    padding: 5px;
+  }
+  .friends:after,
+  .frnd-wrap:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .frnd-pic{
+    border: dotted 1px green;
+    float: left;
+  }
+  .frnd-details{
+    border: solid 2px blue;
+    margin-left: 110px;
+  }
+</style>
+
+</div><!-- eo conatiner -->
+
+
+
+
+
+
+<footer class="site-footer">
+  <p>&copy; 2016 - all rights reserved, <a href="http://www.htmlden.com/">KriS' School of Web</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus amet odit quidem fugiat sed quod, consequuntur sapiente id ipsam omnis quam, ducimus excepturi quo laborum! Repellat, perspiciatis ex exercitationem inventore.</p>
+</footer><!-- /.site-footer -->
+
+
+</body>
+</html>
