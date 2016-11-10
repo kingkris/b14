@@ -1,0 +1,424 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+  color: #444;
+  font-size: 1em;
+  line-height: 1.45;
+  font-family: 'Open Sans', sans-serif;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+ Author's custom styles
+ ========================================================================== */
+
+body{
+  background-color: #efefef;
+  /* background-image: url('../img/page-bg.png'); */
+  background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDQ3MjhFQkJBNkY2MTFFNkJENTNFQzk3RTBDQ0RBRTciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDQ3MjhFQkNBNkY2MTFFNkJENTNFQzk3RTBDQ0RBRTciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowNDcyOEVCOUE2RjYxMUU2QkQ1M0VDOTdFMENDREFFNyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowNDcyOEVCQUE2RjYxMUU2QkQ1M0VDOTdFMENDREFFNyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pl2qxJQAAAAdSURBVHjaYpSUlGQAAikQwQRjAMEzJhgDRAAEGAAh5wJRZnSWOAAAAABJRU5ErkJggg==');  
+  /* link used to convert image to data format - https://www.base64-image.de/ */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+}
+
+
+/*=============================================
+=   Font size code picked from typescale - 
+          http://type-scale.com/
+      Type scale set to perfect fourth       =
+=============================================*/
+p {margin-bottom: 1.3em;}
+h1,
+h2,
+h3,
+h4 {
+  margin: 1.414em 0 0.5em;
+  line-height: 1.2;
+}
+h1 {
+  margin-top: 0;
+  font-size: 3.157em;
+}
+h2 {font-size: 2.369em;}
+h3 {font-size: 1.777em;}
+h4 {font-size: 1.333em;}
+small, .font_small {font-size: 0.75em;}
+
+/*=====  End of type scale  ======*/
+
+/*----------  common selctors  ----------*/
+
+.container{
+  width:1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container:after{
+  content:"";
+  clear: both;
+  display: block;
+}
+
+/*----------  Site header  ----------*/
+.site-header{
+  background-color:#0bbcff;
+  border-bottom: solid 4px #9c27b0;
+  margin-bottom: 15px;
+}
+.site-header h1{
+  font-size:36px;
+  float: left;
+}
+.site-header h1 a{
+  color:#FFF;
+  text-decoration: none;
+}
+.site-header h1 small{
+  font-family: 'Open Sans', sans-serif;
+  font-size:18px;
+  display: block;
+}
+
+.site-header h1,
+.social-links,
+.site-header nav,
+.contact
+{
+  border: solid 1px red;
+}
+
+.social-links{
+  float: right;
+}
+.site-header nav{
+  float: left;
+  clear: left;
+}
+.contact{
+  float: right;
+  clear: right;
+}
+
+.site-header ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+.site-header ul li{
+  float: left;
+}
+
+.social-links li a span{
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.social-links li a{
+  text-decoration: none;
+}
+.social-links li a i:before{
+  width:24px;
+  height:24px;
+  background-color:#b6b6b6;
+  color:#FFF;
+  text-align: center;
+  line-height: 24px;
+  display: block;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+
+
+
+
+/*========================================
+=            styles for Icons            =
+========================================*/
+
+@font-face {
+  font-family: 'kris-icons';
+  src:
+    url('../fonts/kris-icons.ttf?3omskk') format('truetype'),
+    url('../fonts/kris-icons.woff?3omskk') format('woff'),
+    url('../fonts/kris-icons.svg?3omskk#kris-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'kris-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-floral-title:before {
+  content: "\e900";
+}
+.icon-phone:before {
+  content: "\f095";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-google-plus:before {
+  content: "\f0d5";
+}
+.icon-youtube:before {
+  content: "\f167";
+}
+.icon-google:before {
+  content: "\f1a0";
+}
+.icon-git:before {
+  content: "\f1d3";
+}
+.icon-at:before {
+  content: "\f1fa";
+}
+.icon-pinterest-p:before {
+  content: "\f231";
+}
+.icon-accessibility:before {
+  content: "\e84e";
+}
+.icon-android:before {
+  content: "\e859";
+}
+.icon-business_center:before {
+  content: "\eb3f";
+}
+.icon-camera:before {
+  content: "\e3af";
+}
+.icon-photo_camera:before {
+  content: "\e412";
+}
+.icon-camera_roll:before {
+  content: "\e3b3";
+}
+.icon-chrome_reader_mode:before {
+  content: "\e86d";
+}
+.icon-directions_bike:before {
+  content: "\e52f";
+}
+.icon-directions_walk:before {
+  content: "\e536";
+}
+.icon-home:before {
+  content: "\e88a";
+}
+.icon-pie_chart:before {
+  content: "\e6c4";
+}
+.icon-pin_drop:before {
+  content: "\e55e";
+}
+.icon-spa:before {
+  content: "\eb4c";
+}
+.icon-touch_app:before {
+  content: "\e913";
+}
+
+
+
+/*=====  End of styles for Icons  ======*/
+
+
+/* ==========================================================================
+ Media Queries
+ ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+     (-o-min-device-pixel-ratio: 5/4),
+     (-webkit-min-device-pixel-ratio: 1.25),
+     (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+ Helper classes
+ ========================================================================== */
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+ Print styles
+ ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+      background: transparent !important;
+      color: #000 !important;
+      box-shadow: none !important;
+      text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+      text-decoration: underline;
+  }
+
+  a[href]:after {
+      content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+      content: " (" attr(title) ")";
+  }
+
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+      content: "";
+  }
+
+  pre,
+  blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+  }
+
+  thead {
+      display: table-header-group;
+  }
+
+  tr,
+  img {
+      page-break-inside: avoid;
+  }
+
+  img {
+      max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+      orphans: 3;
+      widows: 3;
+  }
+
+  h2,
+  h3 {
+      page-break-after: avoid;
+  }
+}
