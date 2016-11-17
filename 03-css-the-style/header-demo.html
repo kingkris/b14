@@ -12,12 +12,14 @@
 	<header class="site-header">
 		<div class="container">
 			<div class="logo">
-				<img src="https://api.fnkr.net/testimg/200x80/faa100/FFF/?text=Whatever">
+				<a href="#" tabindex="1"><img src="https://api.fnkr.net/testimg/200x80/faa100/FFF/?text=Whatever"></a>
 			</div><!-- eo logo -->
 			<div class="header-links">
 				<a href="#">1</a>
-				<a href="#">2</a>
-				<a href="#">3</a>
+				<a href="http://www.htmlden.com/" tabindex="5" accesskey="h">2</a>
+				<a href="#" tabindex="4">3</a>
+				<a href="#" tabindex="3">4</a>
+				<a href="#" tabindex="2">53</a>
 			</div><!-- eo header-links -->
 		</div><!-- eo container -->
 	</header>
@@ -26,7 +28,21 @@
 <div class="container">
 	<div class="row">
 		<div class="one-half">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ab accusantium, officia voluptatibus adipisci! Delectus asperiores, assumenda illo facere ipsam, sapiente, ducimus cum at error architecto quibusdam perferendis adipisci aliquam.</p>
+			<article>
+				<header>
+					<h2 contenteditable>Some article title</h2>
+					<h2>Some article title</h2>
+					<p>by <a href="#">Raju</a> in <a href="#">Some category</a></p>
+				</header>
+				<div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quo reiciendis necessitatibus! Facilis blanditiis, veritatis totam dolores odio. Praesentium ad officiis minima incidunt ipsum dicta inventore, esse ratione beatae quod?</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, quisquam id, beatae veniam eum deserunt rerum omnis deleniti? Cupiditate reiciendis excepturi neque distinctio, eaque doloremque nemo libero. Sit eos, iusto.</p>
+				</div>
+				<footer>
+					<div>Share widgets</div>
+					<div>Comments</div>
+				</footer>
+			</article>
 		</div>
 		<div class="one-half">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque culpa inventore sequi, qui magni veniam. Quia illo necessitatibus, veniam dolorum nobis sequi? Dolorem nobis optio, laborum excepturi facere, repudiandae praesentium.</p>
@@ -44,7 +60,21 @@
 
 <div class="row">
 	<div class="one-half lightblue">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ab accusantium, officia voluptatibus adipisci! Delectus asperiores, assumenda illo facere ipsam, sapiente, ducimus cum at error architecto quibusdam perferendis adipisci aliquam.</p>
+		<figure>
+			<img src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder">
+			<figcaption>
+				<time datetime="2016-12-04">4th December</time>
+			</figcaption>
+		</figure>
+		<details open>
+			<summary>My Personal info</summary>
+			<p>Date: what ever</p>
+			<p>Date: what ever</p>
+			<p>Date: what ever</p>
+			<p>Date: what ever</p>
+			<p>Date: what ever</p>
+		</details>
+
 	</div>
 	<div class="one-half lightgreen">
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque culpa inventore sequi, qui magni veniam. Quia illo necessitatibus, veniam dolorum nobis sequi? Dolorem nobis optio, laborum excepturi facere, repudiandae praesentium.</p>
@@ -124,6 +154,96 @@
 		</div>
 	</div>
 	</div><!-- eo lightblue -->
+	<div class="container">
+<style>
+	p{color: green !important;}
+	.main-text{color: blue}
+	p#hero-text{color: crimson}
+	#hero-text{color: yellow}
+</style>
+		<div class="row">
+			<div class="one-half ">
+				<p >this is a paragraph</p>
+				<p class="main-text">this is a paragraph</p>
+				<p class="main-text" id="hero-text">this is a paragraph</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ab accusantium, officia voluptatibus adipisci! Delectus asperiores, assumenda illo facere ipsam, sapiente, ducimus cum at error architecto quibusdam perferendis adipisci aliquam.</p>
+			</div>
+			<style>
+				.adj-sel-demo{}
+				.adj-sel-demo p{
+					margin-top: 20px;
+					margin-bottom: 5px;
+					border-top: solid 1px grey;
+					background-color: lightblue;
+				}
+				.adj-sel-demo h3+p{
+					margin-top: -15px;
+					border-top: none;
+					background-color: transparent;
+				}
+			</style>
+			<div class="one-half adj-sel-demo">
+				<h3>Some heading</h3>
+				<h4>thi is heading 4</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque culpa inventore sequi, qui magni veniam.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque culpa inventore sequi, qui magni veniam.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque culpa inventore sequi, qui magni veniam.</p>
+			</div><!-- eo one-half -->
+		</div><!-- eo row -->
+	</div><!-- eo container -->
+
+<div class="lightblue space">
+	<div class="container">
+		<div class="row">
+			<div class="one-third ">
+				<p >this is a paragraph</p>
+<style>
+	.side-menu{
+		padding-left: 0;
+		list-style-type: none;
+	}
+	.side-menu > li{}
+	.side-menu > li > a{
+		color: #555;
+		text-decoration: none;
+		font-size: 15px;
+		text-transform: uppercase;
+		background-color: wheat;
+		margin-bottom: 1px;
+		line-height: 30px;
+		display: block;
+		padding: 0 10px;
+	}
+	.side-menu > li > a:hover{
+		background-color: lightgreen;
+	}
+</style>
+				
+				<ul class="side-menu">
+					<li><a href="#">side link 01</a></li>
+					<li><a href="#">side link 02</a></li>
+					<li><a href="#">side link 03</a>
+						<ul class="sub-side-menu">
+							<li><a href="#">sub side link 01</a></li>
+							<li><a href="#">sub side link 02</a></li>
+							<li><a href="#">sub side link 03</a></li>
+							<li><a href="#">sub side link 04</a></li>
+						</ul>
+					</li>
+					<li><a href="#">side link 04</a></li>
+					<li><a href="#">side link 05</a></li>
+					<li><a href="#">side link 06</a></li>
+				</ul>
+			</div>
+			<div class="one-half">
+				<h3>Some heading</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque culpa inventore sequi, qui magni veniam.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque culpa inventore sequi, qui magni veniam.</p>
+			</div><!-- eo one-half -->
+		</div><!-- eo row -->
+	</div><!-- eo container -->
+</div><!-- eo lightblue -->
+
 
 </body>
 </html>

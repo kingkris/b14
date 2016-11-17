@@ -1,0 +1,180 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Position related css properties | ME, CSS and Browser</title>
+  <meta name="description" content="Learn all the properties related to Position. You'll find examples for all the properties ">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/07-position.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+
+  <!-- Fontface from google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Yanone+Kaffeesatz:300" rel="stylesheet"> 
+
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<!-- <body dir="rtl"> -->
+<!-- To change the direction of the text on th epage -->
+<body>
+<!--[if lt IE 9]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<header class="site-header">
+  <div class="container">
+    <h1>
+      ME, CSS and Browser 
+      <small>with style</small>
+    </h1>
+    <nav>
+      <ul class="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="01-type.html">Type</a></li>
+        <li><a href="02-block.html">Block</a></li>
+        <li><a href="03-list.html">List</a></li>
+        <li><a href="04-background.html">Background</a></li>
+        <li><a href="05-border.html">Border</a></li>
+        <li><a href="06-box.html">Box</a></li>
+        <li class="active"><a href="07-position.html">Position</a></li>
+        <li><a href="08-css3.html">CSS3</a></li>
+        <li><a href="09-animation.html">Animations</a></li>
+        <li><a href="10-layouts.html">Layouts</a></li>
+      </ul><!-- eo .main-menu -->
+    </nav>
+  </div><!-- eo conatiner -->
+</header><!-- /header -->
+
+<div class="conatiner">
+  <h1 class="page-heading">Position related properties</h1>
+
+<style>
+  .form-wrap{
+    width:1000px;
+    padding: 40px;
+    background-color: #E6E6E6;
+    margin: 0 auto;
+  }
+  .form-wrap fieldset{
+    padding-top: 20px;
+  }
+  .form-row{
+    padding: 10px;
+    border-bottom: solid 1px #FFF;
+    margin-bottom: 10px;
+  }
+  .form-row label{
+    display: inline-block;
+    width: 120px;
+  }
+  .form-inner-row{
+    clear: both;
+    padding: 5px;
+    font-size: 13px;
+  }
+  .form-inner-row{
+    clear: both;
+    padding: 5px;
+    font-size: 13px;
+  }
+</style>
+
+
+  <div class="form-wrap">
+    <form action="08-forms-thankyou.html" method="get" accept-charset="utf-8" name="demo-form">
+      <fieldset>
+        <legend>Working with labels</legend>
+        <div class="form-row">
+          <label for="as-username">User name</label> <input type="text" name="uname" id="as-username" >
+        </div><!-- eo form-row -->
+        <div class="form-row">
+          <label>User name <input type="text" name="uname" id="" ></label>
+        </div><!-- eo form-row -->
+      </fieldset>
+      <fieldset>
+        <legend>Working with input type</legend>
+        <div class="form-row">
+          <label for="as-itext">Input type text</label>
+          <input type="text" name="as-itext" id="as-itext" placeholder="Input type text" maxlength="6" value="raju" >
+        </div><!-- /.form-row -->
+        <div class="form-row">
+          <label for="as-ipassword">Input type password</label>
+          <input type="password" name="as-ipassword" id="as-ipassword" placeholder="Input type password" >
+        </div><!-- /.form-row -->
+        <div class="form-row">
+          <p>Choose the preferred Batch</p>
+          <div class="form-inner-row">
+            <input 
+              type="radio" 
+              name="as-radio" 
+              id="as-radio1" 
+              value="Morning batch">
+            <label for="as-radio1">Morning batch</label>
+          </div><!-- /.form-inner-row -->
+          <div class="form-inner-row">
+            <input type="radio" name="as-radio" id="as-radio2" value="Afternoon batch">
+            <label for="as-radio2">Afternoon batch</label>
+          </div><!-- /.form-inner-row -->
+          <div class="form-inner-row">
+            <input type="radio" name="as-radio" id="as-radio3" value="Evening batch">
+            <label for="as-radio3">Evening batch</label>
+          </div><!-- /.form-inner-row -->
+          <div class="form-inner-row">
+            <input type="radio" name="as-radio" id="as-radio4" value="Weekend batch">
+            <label for="as-radio4">Weekend batch</label>
+          </div><!-- /.form-inner-row -->
+        </div><!-- /.form-row -->
+        <div class="form-row">
+          <p>Choose the preferred Batch</p>
+          <div class="form-inner-row">
+            <input 
+              type="checkbox" 
+              name="as-checkbox" 
+              id="as-checkbox1" 
+              value="Morning batch">
+            <label for="as-checkbox1">Morning batch</label>
+          </div><!-- /.form-inner-row -->
+          <div class="form-inner-row">
+            <input type="checkbox" name="as-checkbox" id="as-checkbox2" value="Afternoon batch" checked>
+            <label for="as-checkbox2">Afternoon batch</label>
+          </div><!-- /.form-inner-row -->
+          <div class="form-inner-row">
+            <input type="checkbox" name="as-checkbox" id="as-checkbox3" value="Evening batch">
+            <label for="as-checkbox3">Evening batch</label>
+          </div><!-- /.form-inner-row -->
+          <div class="form-inner-row">
+            <input type="checkbox" name="as-checkbox" id="as-checkbox4" value="Weekend batch">
+            <label for="as-checkbox4">Weekend batch</label>
+          </div><!-- /.form-inner-row -->
+        </div><!-- /.form-row -->
+        <div class="form-row">
+          <label for="as-itext">Input type file</label>
+          <input type="file" name="as-ifile" id="as-ifile" placeholder="Input type file"  >
+        </div><!-- /.form-row -->
+
+      </fieldset>
+      <input type="submit" name="" value="Register Now!">
+      <input type="reset" name="" value="Clear the form">
+      <input type="button" name="" value="i won't do anything">
+      <input type="image" name="" value="" src="img/ico-smiely.png">
+    </form>
+  </div><!-- eo form-wrap -->
+
+
+</div><!-- eo conatiner -->
+
+
+
+
+
+<footer class="site-footer">
+  <p>&copy; 2016 - all rights reserved, <a href="http://www.htmlden.com/">KriS' School of Web</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus amet odit quidem fugiat sed quod, consequuntur sapiente id ipsam omnis quam, ducimus excepturi quo laborum! Repellat, perspiciatis ex exercitationem inventore.</p>
+</footer><!-- /.site-footer -->
+
+
+</body>
+</html>
