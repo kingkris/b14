@@ -81,6 +81,12 @@
     padding: 5px;
     font-size: 13px;
   }
+
+textarea { resize:both; } /* none|horizontal|vertical|both */
+textarea.vert { resize:vertical; }
+textarea.no-resize { resize:none; }
+
+
 </style>
 
 
@@ -152,8 +158,49 @@
           </div><!-- /.form-inner-row -->
         </div><!-- /.form-row -->
         <div class="form-row">
-          <label for="as-itext">Input type file</label>
+          <label for="as-ifile">Input type file</label>
           <input type="file" name="as-ifile" id="as-ifile" placeholder="Input type file"  >
+        </div><!-- /.form-row -->
+        <div class="form-row">
+          <label for="as-imessage">Input type file</label>
+          <textarea name="as-imessage" id="as-imessage" placeholder="Whatever message">this is a sample message
+          </textarea>
+        </div><!-- /.form-row -->
+        <div class="form-row">
+          <label for="as-imessage1">Input type file</label>
+          <textarea name="as-imessage1" class="vert" id="as-imessage1" placeholder="Whatever message">this is a sample message
+          </textarea>
+        </div><!-- /.form-row -->
+        <div class="form-row">
+          <label for="as-imessage2">Input type file</label>
+          <textarea name="as-imessage2" class="no-resize" id="as-imessage2" placeholder="Whatever message">this is a sample message
+          </textarea>
+        </div><!-- /.form-row -->
+        <div class="form-row">
+          <label for="as-select1">Input type file</label>
+          <select name="as-city" multiple id="as-select1">
+            <option value="-">Select your city</option>
+            <option value="Bengaluru">Bengaluru</option>
+            <option value="Madduru" selected>Madduru</option>
+            <option value="Mysooru">Mysooru</option>
+          </select>
+        </div><!-- /.form-row -->
+        <div class="form-row">
+          <label for="as-select2">Input type file</label>
+          <select name="as-city" id="as-select2">
+            <optgroup label="Main cities">
+              <option value="Bengaluru">Bengaluru</option>
+              <option value="Madduru">Madduru</option>
+              <option value="Mysooru">Mysooru</option>
+            </optgroup>
+            <optgroup label="Other cities">
+              <option value="Tumakuru">Tumakuru</option>
+              <option value="Mangaluru">Mangaluru</option>
+              <option value="Davanagere">Davanagere</option>
+              <option value="Davanagere">Davanagere</option>
+              <option value="Davanagere">Davanagere</option>
+            </optgroup>
+          </select>
         </div><!-- /.form-row -->
 
       </fieldset>
@@ -161,6 +208,7 @@
       <input type="reset" name="" value="Clear the form">
       <input type="button" name="" value="i won't do anything">
       <input type="image" name="" value="" src="img/ico-smiely.png">
+      <input type="hidden" name="" value="">
     </form>
   </div><!-- eo form-wrap -->
 
