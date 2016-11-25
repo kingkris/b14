@@ -203,7 +203,9 @@ small, .font_small {font-size: 0.75em;}
   font-style: normal;
 }
 
-[class^="icon-"]:before, [class*=" icon-"]:before {
+[class^="icon-"]:before, 
+[class$="-icon"]:before, 
+[class*=" icon-"]:before {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'kris-icons' !important;
   speak: none;
