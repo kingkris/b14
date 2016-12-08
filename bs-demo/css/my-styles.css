@@ -14,6 +14,15 @@
 	margin-bottom: 10px;
 }
 
+.spacer{
+	min-height:300px;
+}
 
+.body-fixed-top{
+	padding-top: 70px;
+}
 
+.carousel-inner .item img{
+	width: 100%;
+}
 
