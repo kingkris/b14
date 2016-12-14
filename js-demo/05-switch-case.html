@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-   <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Open+Sans" rel="stylesheet">
+   <!-- <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Open+Sans" rel="stylesheet"> -->
 
 
 
@@ -46,7 +46,7 @@
   </nav>
 </div>
      
-          
+  				
 
 
 
@@ -105,34 +105,52 @@
   <hr>
   <hr>
   <script>
-    var min = 0;
-    var max = 1;
 
-    var totalFlips = 0;
-    var totalwon = 0;
+    x = prompt('Enter your name');
 
-    var flip;
-    while (totalwon < 3) {
-      flip = Math.floor(Math.random() * (max - min + 1)) + min;
-
-      if(flip){
-        document.write('<div class="res">WON</div>');
-        totalwon++;
-      } else{
-        document.write('<div class="res">Lost</div>');
-      }
-      totalFlips++;
+    switch (x) {
+      case 'Kris':
+        document.write('<p>Hey ' + x + ' welcome</p>');
+        document.write('<p>you can get started with xyz</p>');
+        break;
+      case 'Raju':
+      case 'Rani':
+      case 'asd':
+        document.write('<p>Hey ' + x + ' welcome</p>');
+        document.write('<p>You can meet admin and get details</p>');
+        break;
+      default:
+        document.write('<p>Hey ' + x + ' you are not authorized</p>');
+        break;
     }
-/*
-    do{
-      // statement
-    } while (condition);
-*/    
-    document.write('<p class="clear">Total Flips are -'+ totalFlips +'</p>');
+
 
   </script>
-
-
+<style>
+  .banner{
+    background-color: #FCE2FA;
+    width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 10px;
+    border: solid 1px #CD00B7;
+  }
+  .banner div:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .banner span{
+    width: 25px;
+    height: 25px;
+    display: block;
+    float: left;
+    color: rgba(216,7,200,.5);
+    background-color: rgba(216,7,200,.5);
+    border: solid 1px #CD00B7;
+    transform: rotate(45deg);
+  }
+</style>
 
 
 </div>

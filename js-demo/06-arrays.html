@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-   <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Open+Sans" rel="stylesheet">
+   <!-- <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Open+Sans" rel="stylesheet"> -->
 
 
 
@@ -46,7 +46,7 @@
   </nav>
 </div>
      
-          
+  				
 
 
 
@@ -105,35 +105,91 @@
   <hr>
   <hr>
   <script>
-    var min = 0;
-    var max = 1;
+    var name = "raju"; 
+    var friends = ["Raju", "Raghav", "Abbakka", "Ranga"];
 
-    var totalFlips = 0;
-    var totalwon = 0;
+    console.log(name);
+    console.log(friends[2]);
+    console.log("Length of array is  " , friends.length);
 
-    var flip;
-    while (totalwon < 3) {
-      flip = Math.floor(Math.random() * (max - min + 1)) + min;
+    friends.forEach( function(friend, index) {
+      console.log(index, friend);
+    });
+    console.log("-----------------------------------");
 
-      if(flip){
-        document.write('<div class="res">WON</div>');
-        totalwon++;
-      } else{
-        document.write('<div class="res">Lost</div>');
-      }
-      totalFlips++;
-    }
-/*
-    do{
-      // statement
-    } while (condition);
-*/    
-    document.write('<p class="clear">Total Flips are -'+ totalFlips +'</p>');
+    friends.push("Ajjappa"); // Adds to the end
+    friends.push("Bonda"); // Adds to the end
+
+    console.log("Length of array is  ", friends.length);
+
+    friends.forEach( function(friend, index) {
+      console.log(index, friend);
+    });
+    friends.push("Yamaraja"); // Adds to the end
+    friends.sort(); // Sorts an array
+    friends.reverse();  // reverses the order
+
+    friends.pop(); // removes from the end
+    console.log("-----------------------------------");
+    console.log("Length of array is  ", friends.length);
+
+    friends.forEach( function(item) {
+      console.log(item);
+    });
+
+    friends.shift(); // removes the first
+    console.log("-----------------------------------");
+    console.log("Length of array is  ", friends.length);
+
+    friends.forEach( function(item) {
+      console.log(item);
+    });
+
+    friends.unshift("Bheema"); // Adds the first
+    console.log("-----------------------------------");
+    console.log("Length of array is  ", friends.length);
+x = 3;
+
+    friends.forEach( function(item, index) {
+
+      document.write('<div class="friend">');
+      document.write('<div class="content');
+      if(index==x){document.write(' winner');}
+      document.write('">');
+      document.write('<img src="https://api.fnkr.net/testimg/120x80/00CED1/FFF/?text='+ item + '">');
+      document.write('<p>' + item+ '</p>');
+      document.write('</div>');
+      document.write('</div>');
+      console.log(item);
+    });
+
+    console.log(friends.indexOf("Raju"));
+
+
 
   </script>
 
 
-
+<style>
+*{
+  box-sizing: border-box;
+}
+.friend{
+  width: 20%;
+  float: left;
+  padding: 10px;
+}
+.content{
+  background-color: wheat;
+  border: solid 4px wheat;
+}
+.content img{
+  width: 100%;
+}
+  .winner{
+    border-color: red;
+  }
+</style>
 
 </div>
 

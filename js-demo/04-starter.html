@@ -46,7 +46,7 @@
   </nav>
 </div>
      
-          
+  				
 
 
 
@@ -98,44 +98,28 @@
     </li>
     <li>
       <i class="icon-device_hub"></i>
-      <h3>Creative design</h3>
+      <h3 id="creative">Creative design</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, amet atque culpa dicta esse ex explicabo, iure maiores maxime!</p>
     </li>
   </ul>
   <hr>
   <hr>
-  <script>
-    var min = 0;
-    var max = 1;
-
-    var totalFlips = 0;
-    var totalwon = 0;
-
-    var flip;
-    while (totalwon < 3) {
-      flip = Math.floor(Math.random() * (max - min + 1)) + min;
-
-      if(flip){
-        document.write('<div class="res">WON</div>');
-        totalwon++;
-      } else{
-        document.write('<div class="res">Lost</div>');
-      }
-      totalFlips++;
-    }
-/*
-    do{
-      // statement
-    } while (condition);
-*/    
-    document.write('<p class="clear">Total Flips are -'+ totalFlips +'</p>');
-
-  </script>
-
 
 
 
 </div>
+
+<script>
+/*  alert("");
+  prompt("");
+  confirm("Are you sure?");
+  console.log('');
+*/
+document.getElementById('creative').style.color = "red";
+
+
+
+</script>
 
 
 
