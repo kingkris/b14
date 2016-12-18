@@ -12,7 +12,8 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
    <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Open+Sans" rel="stylesheet">
-<script src="js/01-intro.js" defer ></script>
+
+
 
 
 </head>
@@ -58,11 +59,7 @@
 <!--eo sidebar-->
 
 <div class="container">
-  <h2 onclick="alert('bang')">My Skills</h2>
-  <script>
-    document.write('<p>I\'d be late');
-    document.write(" OK, \"We'll wait\" </p>");
-  </script>
+  <h2>My Skills</h2>
   <ul class="skills">
     <li>
       <i class="icon-call_missed_outgoing"></i>
@@ -101,26 +98,52 @@
     </li>
     <li>
       <i class="icon-device_hub"></i>
-      <h3 id="creative">Creative <span>Design</span></h3>
+      <h3>Creative design</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, amet atque culpa dicta esse ex explicabo, iure maiores maxime!</p>
     </li>
   </ul>
   <hr>
-  <hr>
-
 
 
 </div>
 
+<script>
+  var x = 20;
+  var y = "30";
+  var z = 30;
 
-<style>
-  .aa{
-    background-color: green;
-    text-transform: uppercase;
-    color: red;
-  }
+console.log(x+y);
+console.log(x+z);
 
-</style>
+if(y == z ||( x > y && x<10 )){
+  console.log('yes they are equal');
+}
+
+if(1){
+  console.log('1 is true');  
+}
+if(0){
+  console.log('0 is false');  
+}
+if(true){
+  console.log('true is true');  
+}
+if(!false){
+  console.log('!false is true');  
+}
+if(!true){
+  console.log('!true is false');  
+}
+var i = prompt('What is your name?');
+
+if(i){
+  console.log('You enetered', i);  
+} else{
+  console.log('Dude, you\'ve exceeded your chance');  
+}
+
+</script>
+
 
 </body>
 </html>
