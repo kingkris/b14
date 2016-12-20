@@ -342,7 +342,6 @@ div[class^="box"]{ /* attribute selector - whose attribute value is beginning wi
     margin-left: auto;
     margin-right: auto;
 
-    border:solid 1px red;
 }
 .container:after{
     clear: both;

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="En">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <title>JS Intro</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+   <!-- <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Open+Sans" rel="stylesheet"> -->
+
+
+
+
+</head>
+<body>
+  <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <header>
+    <h1><a href="#" id="page-heading">Famously</a></h1>
+  </header>
+<div class="wrapper">
+  <nav class="kg_site-nav">
+    <ul class="kg_site-links">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="has-submenu">
+        <a href="#">link01</a>
+        <ul>
+          <li><a href="#">sublink02</a></li>
+          <li><a href="#">sublink03</a></li>
+          <li><a href="#">sublink04</a></li>
+          <li><a href="#">sublink05</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Webdesign Training</a></li>
+      <li><a href="#">link03</a></li>
+      <li><a href="#">link04</a></li>
+      <li><a href="#">link05</a></li>
+    </ul>
+  </nav>
+</div>
+     
+  				
+
+
+
+
+
+
+
+
+
+<!--eo sidebar-->
+
+<div class="container">
+  <h2>Guessing game</h2>
+  <p>Try your luck, guess the correct number</p>
+  <div class="form-row">
+    <input type="text" placeholder="Enter your guess" id="guess">
+    <button>Check</button>
+  </div>
+  <div class="results">
+    <div class="guesses"></div>
+    <div class="result"></div>
+    <div class="attempts"></div>
+  </div>
+  
+
+</div>
+
+<style>
+</style>
+<script>
+
+  var attempts = 0;
+  var limit = 10;
+  var luckyNumber;
+  var guess = document.getElementById('guess');
+  var checkGuess = document.querySelector('button');
+
+  var guessesDiv = document.querySelector('.guesses');
+  var resultDiv = document.querySelector('.result');
+  var attemptsDiv = document.querySelector('.attempts');
+
+      guess.focus();
+
+
+  function randomNumber() {
+    var x = Math.ceil(Math.random()*100+1);
+    console.log(x);
+    return x;
+  }
+
+  luckyNumber = randomNumber();
+/* using anonymus functions
+  checkGuess.onclick = function () {
+    console.log('clicked');
+  }
+*/
+  checkGuess.addEventListener('click', guessingGame);
+
+function guessingGame() {
+
+  console.log('inside guessing game');
+
+  i = Number(guess.value);
+  console.log(i);
+  guess.value = '';
+
+  attempts++;
+  attemptsDiv.textContent = attempts;
+  guessesDiv.textContent += i + ' ';
+
+
+  if(attempts < limit){
+    if(i === luckyNumber){
+      resultDiv.textContent = 'Wow! you\'ve got it right';
+      resultDiv.style.backgroundColor = 'green';
+      checkGuess.disabled = true;
+    }else{
+      if(i < luckyNumber){
+        resultDiv.textContent = 'Entered number is low';
+      } else{
+        resultDiv.textContent = 'Entered number is high';
+      }
+      resultDiv.style.backgroundColor = 'red';
+      guess.focus();
+    }
+  } else{
+      resultDiv.textContent = 'You\'ve exceeded the attempts';
+      resultDiv.style.backgroundColor = 'orange';
+      checkGuess.disabled = true;
+  }
+
+
+
+
+
+}
+
+
+</script>
+<hr><hr><hr>
+
+</body>
+</html>
