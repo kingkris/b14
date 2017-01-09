@@ -259,12 +259,6 @@ header h1 a{color: white;text-decoration: none;font-weight: normal;}
 .box h1{}
 
 
-.wrapper{
-  width: 1000px;
-  margin:20px auto;
-  background-color: #FFF;
-  padding: 12px;
-}
 
 .drop-caps{
   font-size: 20px;
@@ -307,9 +301,24 @@ header h1 a{color: white;text-decoration: none;font-weight: normal;}
                 Styles for Site-nav
 +++++++++++++++++++++++++++++++++++++++++*/
 .kg_site-nav{
-  background-color: #512DA8;
+  background-color: #FFF;
+  padding: 12px;
+  display: none;
+}
+@media (min-width:768px){
+  .kg_site-nav{
+    display: block;
+    max-width: 740px;
+    margin: 20px auto;
+  }
+}
+@media (min-width:980px){
+  .kg_site-nav{
+    max-width: 960px;
+  }
 }
 .kg_site-links{
+  background-color: #512DA8;
   margin: 0;
   padding: 10px;
   list-style-type: none;
@@ -320,9 +329,16 @@ header h1 a{color: white;text-decoration: none;font-weight: normal;}
   display: block;
 }
 .kg_site-links > li{
-  float: left;
-  padding-right: 10px;
+  padding-bottom: 10px;
   position: relative;
+}
+
+@media (min-width:768px){
+  .kg_site-links > li{
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 0;
+  }
 }
 .kg_site-links > li > a{
   text-transform: uppercase;

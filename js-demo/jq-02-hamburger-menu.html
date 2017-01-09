@@ -30,7 +30,6 @@
       <span></span>
     </div>
   </header>
-<div class="wrapper">
   <nav class="kg_site-nav">
     <ul class="kg_site-links">
       <li class="active"><a href="#">Home</a></li>
@@ -49,7 +48,6 @@
       <li><a href="#">link05</a></li>
     </ul>
   </nav>
-</div>
 
 
 
@@ -96,6 +94,7 @@
   jQuery(document).ready(function($) {
     $('.hamburger').click(function(event) {
       $(this).toggleClass('active');
+      $('.kg_site-nav').slideToggle('slow');
     });
   });
 
