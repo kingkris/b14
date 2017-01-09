@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="En">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <title>JS Intro</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main-menu.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+   <!-- <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Open+Sans" rel="stylesheet"> -->
+
+
+
+
+</head>
+<body>
+  <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <header class="site-header">
+    <h1><a href="#" id="page-heading">Famously</a></h1>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+<div class="wrapper">
+  <nav class="kg_site-nav">
+    <ul class="kg_site-links">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="has-submenu">
+        <a href="#">link01</a>
+        <ul>
+          <li><a href="#">sublink02</a></li>
+          <li><a href="#">sublink03</a></li>
+          <li><a href="#">sublink04</a></li>
+          <li><a href="#">sublink05</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Webdesign Training</a></li>
+      <li><a href="#">link03</a></li>
+      <li><a href="#">link04</a></li>
+      <li><a href="#">link05</a></li>
+    </ul>
+  </nav>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--eo sidebar-->
+
+<div class="container">
+  <div class="spacer">
+    <h2>First Some heading</h2>
+    <h3 class="whatever">Whatever <strong>text</strong> you <u>would</u> want to <span class="strike">add dynamically</span></h3>
+    <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eaque, dolor nulla assumenda, quos unde, sit ipsa voluptate ad nobis, voluptatem quo minima quasi? Nulla expedita, beatae eum rem aut.</p>
+    <p>2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eaque, dolor nulla assumenda, quos unde, sit ipsa voluptate ad nobis, voluptatem quo minima quasi? Nulla expedita, beatae eum rem aut.</p>
+  </div>
+  <div class="spacer">
+    <h2>Second Some heading</h2>
+    <p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eaque, dolor nulla assumenda, quos unde, sit ipsa voluptate ad nobis, voluptatem quo minima quasi? Nulla expedita, beatae eum rem aut.</p>
+    <p>4 444444 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eaque, dolor nulla assumenda, quos unde, sit ipsa voluptate ad nobis, voluptatem quo minima quasi? Nulla expedita, beatae eum rem aut.</p>
+  </div>
+  <div class="spacer">
+    <h2>Third Some heading</h2>
+    <p>5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eaque, dolor nulla assumenda, quos unde, sit ipsa voluptate ad nobis, voluptatem quo minima quasi? Nulla expedita, beatae eum rem aut.</p>
+    <p>6 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eaque, dolor nulla assumenda, quos unde, sit ipsa voluptate ad nobis, voluptatem quo minima quasi? Nulla expedita, beatae eum rem aut.</p>
+  </div>
+  <div class="spacer">
+    <h2>Fourth Some heading</h2>
+    <p>7 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eaque, dolor nulla assumenda, quos unde, sit ipsa voluptate ad nobis, voluptatem quo minima quasi? Nulla expedita, beatae eum rem aut.</p>
+    <p>8 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eaque, dolor nulla assumenda, quos unde, sit ipsa voluptate ad nobis, voluptatem quo minima quasi? Nulla expedita, beatae eum rem aut.</p>
+  </div>
+</div>
+
+
+<hr><hr><hr>
+
+<script src="js/vendor/jquery-3.1.1.min.js" ></script>
+
+<script>
+  jQuery(document).ready(function($) {
+    $('.hamburger').click(function(event) {
+      $(this).toggleClass('active');
+    });
+  });
+
+
+</script>
+
+</body>
+</html>

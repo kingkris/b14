@@ -76,6 +76,126 @@ h6{
 body{
     background-color: #eaeaea;
 }
+
+
+  .spacer{
+    min-height: 600px;
+    border-left: dotted 1px red;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  .site-header{
+    background-color: green;
+    transition: all 250ms ease;
+    position: relative;
+  }
+  .site-header.site-header-fixed{
+    min-height: 60px;
+    background-color: lightgreen;
+    position: fixed;
+    left: 0;right: 0;top: 0;
+    z-index: 1;
+  }
+  .site-header h1{
+    font-size: 40px;
+    font-family: Georgia, serif;
+    line-height: 2;
+    margin: 0;
+    padding: 0 10px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #FFF;
+    transition: all 250ms ease;
+  }
+  @media(min-width:768px){
+    .site-header h1{
+      font-size: 60px;
+      text-align: center;
+    }
+  }
+  .site-header.site-header-fixed h1{
+    font-size: 30px;
+    text-align: left;
+  }
+  .site-header.site-header-fixed h1 a{
+    color: #1B6A00;
+  }
+  .strike{
+    text-decoration: line-through;
+  }
+
+
+/*----------  Hamburger code  ----------*/
+.hamburger{display: none;}
+
+@media (max-width:767px){
+  .hamburger{
+    display: block;
+    width:32px;
+    height:31px;
+    border: solid 2px #FFF;
+    border-radius:4px;
+    position: absolute;
+    right:10px;
+    top:0;bottom:0;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+    transition:all 250ms ease
+  }
+  .hamburger span{
+    width:20px;
+    height:3px;
+    border-radius:2px;
+    position: absolute;
+    left:4px;
+    background-color:#FFF;
+    transition:all 250ms ease
+  }
+  .hamburger span:first-child{top:5px}
+  .hamburger span:nth-child(2){top:12px;}
+  .hamburger span:last-child{top:19px}
+  /* hover styles */
+  .hamburger:hover{
+    border-color: #512DA8;
+    background-color:#FFF;
+  }
+  .hamburger:hover span{background-color:#512DA8;}
+  .hamburger:hover span:first-child{top:19px}
+  .hamburger:hover span:last-child{top:5px}
+
+/*----------  Hamburger active  ----------*/
+  .hamburger.active{
+    border-radius:50%;
+  }
+  .hamburger.active span:nth-child(2){
+    left:-80px;
+    opacity: 0;
+    display: none;
+  }
+  .hamburger.active span:first-child{
+    transform:rotate(45deg);
+  }
+  .hamburger.active span:last-child{
+    transform:rotate(-45deg);
+  }
+  .hamburger.active span:first-child{top:12px}
+  .hamburger.active span:last-child{top:12px}
+
+  .hamburger.active:hover span:first-child{top:12px}
+  .hamburger.active:hover span:last-child{top:12px}
+
+
+
+}
+
+
+
+/*----------  Hamburger code  ----------*/
+
+
+
+
 .sidebar{
     width: 320px;
     margin-left: auto;

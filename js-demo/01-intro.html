@@ -99,13 +99,40 @@
     </li>
     <li>
       <i class="icon-device_hub"></i>
-      <h3>Creative design</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, amet atque culpa dicta esse ex explicabo, iure maiores maxime!</p>
+      <h3>Creative design</h3>
     </li>
   </ul>
 </div>
+<style>
+/* 
+.icon-device_hub ~ h3{
+  text-transform: uppercase;
+  font-weight: normal;
+  color: violet;
+}
+*/
+.whateve{
+  text-transform: uppercase;
+  font-weight: normal;
+  color: violet;
+}
+
+ </style>
+<script src="js/vendor/jquery-3.1.1.min.js" async defer></script>
+<script>
+  jQuery(document).ready(function($) {
+    //  jQuery('.icon-device_hub ~ h3').addClass('whateve');
+    $('.icon-device_hub ~ h3').addClass('whateve');
+  });
 
 
+
+
+
+
+
+</script>
 
 </body>
 </html>

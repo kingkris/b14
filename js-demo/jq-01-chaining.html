@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="En">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <title>JS Intro</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+   <!-- <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Open+Sans" rel="stylesheet"> -->
+
+
+
+
+</head>
+<body>
+  <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <header class="site-header">
+    <h1><a href="#" id="page-heading">Famously</a></h1>
+  </header>
+<div class="wrapper">
+  <nav class="kg_site-nav">
+    <ul class="kg_site-links">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="has-submenu">
+        <a href="#">link01</a>
+        <ul>
+          <li><a href="#">sublink02</a></li>
+          <li><a href="#">sublink03</a></li>
+          <li><a href="#">sublink04</a></li>
+          <li><a href="#">sublink05</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Webdesign Training</a></li>
+      <li><a href="#">link03</a></li>
+      <li><a href="#">link04</a></li>
+      <li><a href="#">link05</a></li>
+    </ul>
+  </nav>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--eo sidebar-->
+
+<div class="container">
+  <div class="spacer">
+    <h2>First Some heading</h2>
+    <h3 class="whatever">Whatever <strong>text</strong> you <u>would</u> want to <span class="strike">add dynamically</span></h3>
+    <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eaque, dolor nulla assumenda, quos unde, sit ipsa voluptate ad nobis, voluptatem quo minima quasi? Nulla expedita, beatae eum rem aut.</p>
+    <p>2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eaque, dolor nulla assumenda, quos unde, sit ipsa voluptate ad nobis, voluptatem quo minima quasi? Nulla expedita, beatae eum rem aut.</p>
+  </div>
+  <div class="spacer">
+    <h2>Second Some heading</h2>
+    <p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eaque, dolor nulla assumenda, quos unde, sit ipsa voluptate ad nobis, voluptatem quo minima quasi? Nulla expedita, beatae eum rem aut.</p>
+    <p>4 444444 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eaque, dolor nulla assumenda, quos unde, sit ipsa voluptate ad nobis, voluptatem quo minima quasi? Nulla expedita, beatae eum rem aut.</p>
+  </div>
+  <div class="spacer">
+    <h2>Third Some heading</h2>
+    <p>5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eaque, dolor nulla assumenda, quos unde, sit ipsa voluptate ad nobis, voluptatem quo minima quasi? Nulla expedita, beatae eum rem aut.</p>
+    <p>6 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eaque, dolor nulla assumenda, quos unde, sit ipsa voluptate ad nobis, voluptatem quo minima quasi? Nulla expedita, beatae eum rem aut.</p>
+  </div>
+  <div class="spacer">
+    <h2>Fourth Some heading</h2>
+    <p>7 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eaque, dolor nulla assumenda, quos unde, sit ipsa voluptate ad nobis, voluptatem quo minima quasi? Nulla expedita, beatae eum rem aut.</p>
+    <p>8 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eaque, dolor nulla assumenda, quos unde, sit ipsa voluptate ad nobis, voluptatem quo minima quasi? Nulla expedita, beatae eum rem aut.</p>
+  </div>
+</div>
+
+
+<hr><hr><hr>
+
+<style>
+  .spacer{
+    min-height: 600px;
+    border-left: dotted 1px red;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  .site-header{
+    min-height: 120px;
+    background-color: green;
+    transition: all 250ms ease;
+  }
+  .site-header.site-header-fixed{
+    min-height: 60px;
+    background-color: lightgreen;
+    position: fixed;
+    left: 0;right: 0;top: 0;
+    z-index: 1;
+  }
+  .site-header h1{
+    font-size: 60px;
+    font-family: Georgia, serif;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+    transition: all 250ms ease;
+  }
+  .site-header.site-header-fixed h1{
+    font-size: 30px;
+    text-align: left;
+  }
+  .site-header.site-header-fixed h1 a{
+    color: #1B6A00;
+  }
+  .strike{
+    text-decoration: line-through;
+  }
+</style>
+
+<script src="js/vendor/jquery-3.1.1.min.js" ></script>
+
+<script>
+  $(document).ready(function($) {
+
+
+    var para = jQuery('p');
+    var anchor = $('a');
+    console.log(para);
+    y = $(para[0]).html();
+    console.log(y);
+    var text = $('.spacer').html();
+
+
+
+    var message = 'Whatever <strong>text</strong> you <u>would</u> want to <span class="strike">add dynamically</span>';
+    console.log(text);
+
+    alert('ding');
+
+    $(para[3]).text(message);
+    y = $('.whatever').html();
+    z = $('.whatever').text();
+    console.log(y);
+    console.log(z);
+
+/*    $(this).scroll(function () {
+      $('.site-header').addClass('site-header-fixed');
+    })
+*/
+
+/*    $(para[6]).hover(function () {
+      $(this).css('color','red');
+    });
+*/
+
+  $(para[6]).on({
+  click: function() {
+    $(this).css({
+        'color':'gold',
+        'background-color':'red'
+        });
+  }, mouseenter: function() {
+    $(this).css({
+        'color':'red',
+        'background-color':'yellow'
+        });
+  }, mouseleave: function() {
+    $(this).css({
+        'color':'black',
+        'background-color':'white'
+        });
+  }
+});
+
+
+    $(para[6]).mouseenter(function () {
+      $(this).css({
+        'color':'red',
+        'background-color':'yellow'
+        });
+    });
+    $(para[6]).mouseleave(function () {
+      $(this).css('color','black');
+    });
+
+
+});
+</script>
+
+</body>
+</html>
