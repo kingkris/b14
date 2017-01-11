@@ -1,0 +1,119 @@
+
+/* 1.4 Image replacement
+--------------------------------------------------*/
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+
+/* 1.5 Clear Fix
+--------------------------------------------------*/
+.cf:before, .cf:after {content: "\0020"; display: block; height: 0; visibility: hidden;}
+.cf:after {clear: both;}
+.cf {zoom: 1;}
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+
+/* 1.6 Non-semantic helper classes
+--------------------------------------------------*/
+.fl { float:left}
+.fr { float:right}
+/*Page width*/
+.pw {width:1000px;margin: 0 auto;text-align: left;background-color:#fff}
+/*+-Alert & errors-+*/
+
+.rc{
+  border:solid 1px #d4d4d4;
+  -moz-border-radius:3px 0 3px 3px;
+  -webkit-border-radius:3px 0 3px 3px;
+  -khtml-border-radius:3px 0 3px 3px;
+  border-radius:3px 0 3px 3px;
+}
+/* 1.10 Sprite image
+--------------------------------------------------*/
+.facets .facet .titleBar a.show-hide
+{
+  background: transparent url(../img/sprite.png) no-repeat;
+}
+
+
+/* 2.1 Layout
+--------------------------------------------------*/
+
+
+section.oneCol{clear:both}
+section.oneCol aside.leftCol{float:left;width:185px;margin-top:50px;} /** CHANGE **/
+section.oneCol .bigCol{float:right;width:790px;}
+section.fullwidth{clear:both;margin-bottom:10px}
+
+
+.twoCol .bigCol{width:690px;float:left}
+.twoCol .rightCol{width:300px;float:right}
+
+/* 2.8 Facets
+--------------------------------------------------*/
+.facets{
+  background-color:#F5F5F5;
+  margin:0 0 10px 0;
+  padding:0 0 5px 0;
+  border:1px solid #CCC;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  -o-border-radius:3px;
+}
+  .facets h4{padding:0 10px;border-bottom:1px solid #ccc;font-size:18px;font-weight:normal;line-height:26px}
+  .facets .facet{
+    background-color:#FFF;
+    margin:10px 4px 0;
+    padding:0 0 5px 0;
+    border:1px solid #D7D7D7;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    -o-border-radius:3px;
+  }
+  .facets .facet .titleBar{
+    border-bottom:1px solid #fff;
+    background:#d7d7d7;
+    padding:0 5px;
+    height:28px
+  }
+  .facets .facet .titleBar h5{
+    font-size:15px;
+    line-height:28px;
+    color:#222;
+    margin:0
+  }
+  .facets .facet .titleBar a{float:right;font-size:11px;}
+  .facets .facet .titleBar a.show-hide {
+    background-color:#FFF;
+    display:block;
+    margin:6px 0 0;
+    height:15px;
+    width:15px;
+    outline:none;
+    background-position:4px -186px;
+    border-radius:15px;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    -o-border-radius:15px;
+  }
+  .facets .facet .titleBar.collapse a.show-hide{background-position:-14px -186px}
+  .facets .facet .titleBar a.show-hide:hover{background-color:#48B3FB}
+  .facets .facet ul{
+    list-style:none;
+    padding-left: 0;
+  }
+  .facets .facet ul li{padding:6px;line-height:12px;}
+  .facets .facet ul li:hover{background:#a3d9fd;color:#000;}
+  .facets .facet ul li.selected{font-weight:bold;background:#a3d9fd;color:#000;}
+  .facets .facet ul li a{color:#444;text-decoration:none}
+  .facets .facet ul li input{margin:0 5px 0 0;vertical-align:bottom;}
+
+

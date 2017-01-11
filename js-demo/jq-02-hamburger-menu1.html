@@ -173,38 +173,43 @@
 <script src="js/vendor/jquery-3.1.1.min.js" ></script>
 
 <script>
-  jQuery(document).ready(function($) {
-
+jQuery(document).ready(function($) {
     // For hamburger menu
     $('.hamburger').click(function(event) {
-      $(this).toggleClass('active');
-      $('.kg_site-nav').slideToggle('slow');
+        $(this).toggleClass('active');
+        $('.kg_site-nav').slideToggle('slow');
     });
-
     // For Page scroll
     $('.kg_site-links a, .btn-top').click(function(event) {
-      event.preventDefault();//to disbale the default activity
-      elem = $(this);// the clicked element
-
-      $('.kg_site-links li').removeClass('active');
-      elem.parent().addClass('active');
-      y = elem.attr('href');
-
-      offset = $(y).offset();
-     // $('html, body').scrollTop(offset.top);
-      $('html, body').animate({
-        scrollTop: offset.top}, 400);
-
-
-
+        event.preventDefault(); //to disbale the default activity
+        var elem = $(this);
+        var elemText = elem.text();
+        setActiveElement(elem, elemText);
     });
+});
 
+function setActiveElement(elem, elemText) {
 
+/*Sets active element based on the element clicked. This includes top button logic as per which the home is highlighted when
+ top button is clicked*/
 
+    $('.kg_site-links li').removeClass('active');
+    if (elemText === 'Top') {
+        $('.kg_site-links li:nth-child(1)').addClass('active');
+    } else {
+        elem.parent().addClass('active');
+    }
+    scrollToClickedElement(elem);
+}
 
-
-  });
-
+function scrollToClickedElement(elem) {
+    // the clicked element
+    y = elem.attr('href');
+    offset = $(y).offset();
+    $('html, body').animate({
+        scrollTop: offset.top
+    }, 400);
+}
 
 </script>
 
