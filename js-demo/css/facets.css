@@ -36,7 +36,7 @@
 }
 /* 1.10 Sprite image
 --------------------------------------------------*/
-.facets .facet .titleBar a.show-hide
+.facets .facet .titleBar .show-hide
 {
   background: transparent url(../img/sprite.png) no-repeat;
 }
@@ -47,8 +47,14 @@
 
 
 section.oneCol{clear:both}
-section.oneCol aside.leftCol{float:left;width:185px;margin-top:50px;} /** CHANGE **/
-section.oneCol .bigCol{float:right;width:790px;}
+section.oneCol aside.leftCol{
+  float:left;
+  width:185px;
+  margin-top:0;} /** CHANGE **/
+section.oneCol .bigCol{
+  margin-left: 200px;}
+
+.bigCol img{width:100%}
 section.fullwidth{clear:both;margin-bottom:10px}
 
 
@@ -82,7 +88,8 @@ section.fullwidth{clear:both;margin-bottom:10px}
     border-bottom:1px solid #fff;
     background:#d7d7d7;
     padding:0 5px;
-    height:28px
+    height:28px;
+    cursor: pointer;
   }
   .facets .facet .titleBar h5{
     font-size:15px;
@@ -90,22 +97,23 @@ section.fullwidth{clear:both;margin-bottom:10px}
     color:#222;
     margin:0
   }
-  .facets .facet .titleBar a{float:right;font-size:11px;}
-  .facets .facet .titleBar a.show-hide {
+  .facets .facet .titleBar .show-hide {
+    float:right;font-size:11px;
     background-color:#FFF;
     display:block;
     margin:6px 0 0;
     height:15px;
     width:15px;
     outline:none;
+    cursor: pointer;
     background-position:4px -186px;
     border-radius:15px;
     -moz-border-radius:15px;
     -webkit-border-radius:15px;
     -o-border-radius:15px;
   }
-  .facets .facet .titleBar.collapse a.show-hide{background-position:-14px -186px}
-  .facets .facet .titleBar a.show-hide:hover{background-color:#48B3FB}
+  .facets .facet .titleBar.collapse .show-hide{background-position:-14px -186px}
+  .facets .facet .titleBar .show-hide:hover{background-color:#48B3FB}
   .facets .facet ul{
     list-style:none;
     padding-left: 0;

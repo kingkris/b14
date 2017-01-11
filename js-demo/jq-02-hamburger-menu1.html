@@ -98,7 +98,7 @@
         <h4>Refine search</h4><!-- CHANGE -->
         <div class="facet">
           <div class="titleBar">
-            <a href="#" class="show-hide"></a>
+            <span class="show-hide"></span>
             <h5>Type</h5><!-- CHANGE -->
           </div>
           <ul class="facet-list">
@@ -109,7 +109,7 @@
         </div>
         <div class="facet">
           <div class="titleBar">
-            <a href="#" class="show-hide"></a>
+            <span class="show-hide"></span>
             <h5>Facility</h5><!-- CHANGE -->
           </div>
           <ul class="facet-list">
@@ -124,7 +124,7 @@
         <h4>Try Near</h4>
         <div class="facet">
           <div class="titleBar">
-            <a href="#" class="show-hide"></a>
+            <span class="show-hide"></span>
             <h5>Times</h5><!-- CHANGE -->
           </div>
           <ul class="facet-list">
@@ -134,9 +134,10 @@
         </div>
         <div class="facet">
           <div class="titleBar">
-            <a href="#" class="show-hide"></a>
+            <span class="show-hide"></span>
             <h5>Locations</h5><!-- CHANGE -->
           </div>
+          <h5>Hello</h5>
           <ul class="facet-list">
             <li class="selected"><a href="#">Indiranagar(14)</a></li>
             <li><a href="#">HAL 2nd Stage(12)</a></li>
@@ -146,7 +147,7 @@
       </div>
     </aside>
     <div class="bigCol">
-
+      <img src="https://api.fnkr.net/testimg/800x600/D100AC/FFF/?text=Some+Content">
     </div>
   </section>
 
@@ -185,6 +186,10 @@ jQuery(document).ready(function($) {
         var elem = $(this);
         var elemText = elem.text();
         setActiveElement(elem, elemText);
+    });
+
+    $('.titleBar').click(function(event) {
+      $(this).toggleClass('collapse').siblings('.facet-list').slideToggle();
     });
 });
 
